@@ -6,10 +6,10 @@ import { Post } from "@/components/Post"
 export function Posts({ posts }: { posts: IPosts[] }) {
   function postsByColumn(column: "right" | "left") {
     const rest = column === "left" ? 0 : 1
-
+    
     return posts
       .filter((_, index) => index % 2 === rest)
-      .map((post) => <Post key={post.id} post={post} />)
+      .map((post) => Object.keys(post).length > 0 && <Post key={post.id} post={post} />)
   }
 
   return (

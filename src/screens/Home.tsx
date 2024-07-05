@@ -1,24 +1,10 @@
 import { Posts } from "@/components/Posts";
-import service from "@/service";
-import { useEffect, useState } from "react";
 import { View, Text } from "react-native";
 
+import { usePosts } from "@/hooks/usePosts";
+
 export function Home() {
-    const [posts, setPosts] = useState<IPosts[]>([]);
-
-    async function getPosts() {
-        try {
-            const response = await service.get('/posts');
-
-            setPosts(response.data);
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
-    useEffect(() => {
-        getPosts();
-    }, [])
+    const { posts } = usePosts();
 
     return (
         <View className="flex-1 p-5 bg-neutral-900">
