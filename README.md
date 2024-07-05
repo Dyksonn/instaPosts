@@ -1,8 +1,5 @@
 <h1>InstaPosts</h1>
 
-### Video Demonstrativo
-![8F4A3557-69C0-43F0-8BB8-1F8AC1FF9CD1_1_102_o](https://github.com/Dyksonn/instaPosts/assets/44515719/1a4df1f7-c7d2-48b8-8105-d841c5e0382c)
-
 > Status: concluído 🚀
 ### Desafio para desenvolvedor mobile
 
